@@ -1,0 +1,210 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.315);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  z-index: 100;
+}
+
+h1:hover {
+  cursor: pointer;
+  transform: translate(5px, 5px);
+  color: gray;
+  transition: all 1s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: gray;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+nav ul {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  width: 450px;
+  height: 40px;
+  box-shadow: 2px 2px 7px rgba(128, 128, 128, 0.247);
+  border-radius: 19px;
+  border: 0.5px solid rgb(207, 207, 207);
+}
+main {
+  padding-top: 80px;
+}
+#home {
+  font-size: 1.8em;
+  text-align: center;
+  /* background-color: aquamarine; */
+  height: 600px;
+  padding: 19px;
+  line-height: 70px;
+}
+button {
+  padding: 15px;
+  margin: 40px;
+  border-radius: 20px;
+  width: 120px;
+  /* border: 1px solid gray; */
+  /* box-shadow: 1.5px 1.5px 3px gray; */
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 17px;
+}
+header img {
+  height: 70px;
+  width: 90px;
+}
+#photo1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 9px gray;
+}
+#aboutme h2 {
+  font-size: 2.5em;
+  padding-bottom: 60px;
+  /* margin-top: 80px; */
+}
+#aboutme p {
+  position: absolute;
+  right: 150px;
+  top: 150px;
+  font-size: 18px;
+  line-height: 37px;
+}
+
+#aboutme {
+  position: relative;
+  text-align: center;
+  height: 700px;
+  padding: 20px;
+}
+
+#hame {
+  font-size: 22px;
+  width: 200px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(1, auto);
+  gap: 10px;
+  position: absolute;
+  right: 600px;
+  top: 360px;
+  font-weight: bold;
+  text-align: center;
+}
+#hame i {
+  font-size: 32px;
+}
+#lan {
+  position: absolute;
+  left: 70px;
+  top: 40px;
+}
+#cit {
+  position: absolute;
+  top: 40px;
+}
+#uni {
+  position: absolute;
+  top: 40px;
+}
+#edu {
+  position: absolute;
+  top: 40px;
+}
+
+.moraba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 170px;
+  height: 180px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.582);
+}
+
+#photo2 {
+  position: absolute;
+  left: 110px;
+  width: 330px;
+  height: 420px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 9px grey;
+}
+footer {
+  text-align: center;
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+#foot {
+  font-size: 19px;
+  height: 80px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+}
+@keyframes ani {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+section img {
+  animation: ani 1.5s ease-in-out both;
+}
+@keyframes ani2 {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ani2 {
+  animation: ani2 1.5s ease-out forwards;
+}
+button {
+  animation: ani 1.6s ease-in-out both;
+}
+/* .moraba {
+  animation: ani2 1.5s ease-out forwards;
+  transition: all 0.5s;
+} */
+.moraba:hover {
+  transform: translate(5px, 15px);
+  transition: all 0.5s;
+  border-color: rgb(223, 209, 209);
+  box-shadow: 6px 6px 9px gray;
+}
